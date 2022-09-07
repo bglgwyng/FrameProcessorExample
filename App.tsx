@@ -31,6 +31,7 @@ import {
 import {scanFaces, Face} from 'vision-camera-face-detector';
 import {runOnJS} from 'react-native-reanimated';
 import adjustToView, {type Dimensions} from './adjustToView';
+import {rotationDegrees} from './rotationDegrees';
 
 const styles = StyleSheet.create({
   boundingBox: {
@@ -52,25 +53,30 @@ const CameraApp = () => {
   const [frameDimensions, setFrameDimensions] = useState<Dimensions>();
   const [faces, setFaces] = useState<Face[]>([]);
 
-  const handleScan = useCallback((frame: Frame, newFaces: Face[]) => {
-    const isRotated = Platform.OS === 'android';
-    setFrameDimensions(
-      isRotated
-        ? {
-            width: frame.height,
-            height: frame.width,
-          }
-        : {width: frame.width, height: frame.height},
-    );
-    setFaces(newFaces);
-    console.info(newFaces[0]?.bounds);
-  }, []);
+  const handleScan = useCallback(
+    (frame: Frame, rotationDegrees$: number, newFaces: Face[]) => {
+      const isRotated = rotationDegrees$ === 90 || rotationDegrees$ === 270;
+      setFrameDimensions(
+        isRotated
+          ? {
+              width: frame.height,
+              height: frame.width,
+            }
+          : {
+              width: frame.width,
+              height: frame.height,
+            },
+      );
+      setFaces(newFaces);
+    },
+    [],
+  );
 
   const frameProcessor = useFrameProcessor(
     frame => {
       'worklet';
 
-      runOnJS(handleScan)(frame, scanFaces(frame));
+      runOnJS(handleScan)(frame, rotationDegrees(frame), scanFaces(frame));
     },
     [handleScan],
   );

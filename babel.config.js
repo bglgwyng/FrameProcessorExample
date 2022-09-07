@@ -4,7 +4,7 @@ module.exports = {
     [
       'react-native-reanimated/plugin',
       {
-        globals: ['__scanFaces'],
+        globals: ['__scanFaces', '__rotationDegrees'],
       },
     ],
   ],

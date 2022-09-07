@@ -284,6 +284,8 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+
+    implementation 'androidx.camera:camera-core:1.1.0-alpha01'
 }
 
 if (isNewArchitectureEnabled()) {
