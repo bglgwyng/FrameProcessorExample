@@ -12,6 +12,7 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		59E93922ABF6DE335D74F3A4 /* FrameProcessorExample-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 67CD8ACEA4A7AC3C95015334 /* FrameProcessorExample-Bridging-Header.h */; };
 		7699B88040F8A987B510C191 /* libPods-FrameProcessorExample-FrameProcessorExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-FrameProcessorExample-FrameProcessorExampleTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		00E356EE1AD99517003FC87E /* FrameProcessorExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameProcessorExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* FrameProcessorExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameProcessorExampleTests.m; sourceTree = "<group>"; };
+		097F058CE4077BF6029B6DCC /* XyzFrameProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XyzFrameProcessor.m; path = XyzFrameProcessor/XyzFrameProcessor.m; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* FrameProcessorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameProcessorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FrameProcessorExample/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = FrameProcessorExample/AppDelegate.mm; sourceTree = "<group>"; };
@@ -41,8 +43,10 @@
 		5709B34CF0A7D63546082F79 /* Pods-FrameProcessorExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameProcessorExample.release.xcconfig"; path = "Target Support Files/Pods-FrameProcessorExample/Pods-FrameProcessorExample.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-FrameProcessorExample-FrameProcessorExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameProcessorExample-FrameProcessorExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-FrameProcessorExample-FrameProcessorExampleTests/Pods-FrameProcessorExample-FrameProcessorExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-FrameProcessorExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrameProcessorExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67CD8ACEA4A7AC3C95015334 /* FrameProcessorExample-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FrameProcessorExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FrameProcessorExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-FrameProcessorExample-FrameProcessorExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameProcessorExample-FrameProcessorExampleTests.release.xcconfig"; path = "Target Support Files/Pods-FrameProcessorExample-FrameProcessorExampleTests/Pods-FrameProcessorExample-FrameProcessorExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		A317FD747E2F14844B883B04 /* XyzFrameProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XyzFrameProcessor.swift; path = XyzFrameProcessor/XyzFrameProcessor.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -92,6 +96,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				67CD8ACEA4A7AC3C95015334 /* FrameProcessorExample-Bridging-Header.h */,
 			);
 			name = FrameProcessorExample;
 			sourceTree = "<group>";
@@ -104,6 +109,15 @@
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-FrameProcessorExample-FrameProcessorExampleTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		516B15F515006C7E2208E6AE /* XyzFrameProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				097F058CE4077BF6029B6DCC /* XyzFrameProcessor.m */,
+				A317FD747E2F14844B883B04 /* XyzFrameProcessor.swift */,
+			);
+			name = XyzFrameProcessor;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -122,6 +136,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				516B15F515006C7E2208E6AE /* XyzFrameProcessor */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -149,6 +164,17 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8844592E2800DE79D5FE71F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59E93922ABF6DE335D74F3A4 /* FrameProcessorExample-Bridging-Header.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		00E356ED1AD99517003FC87E /* FrameProcessorExampleTests */ = {
@@ -184,6 +210,7 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				8844592E2800DE79D5FE71F2 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -500,6 +527,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FrameProcessorExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "FrameProcessorExample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -526,6 +554,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FrameProcessorExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "FrameProcessorExample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

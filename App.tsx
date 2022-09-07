@@ -14,9 +14,15 @@ import {Text, TouchableOpacity, useWindowDimensions, View} from 'react-native';
 import {
   Camera,
   CameraPermissionStatus,
+  Frame,
   useCameraDevices,
   useFrameProcessor,
 } from 'react-native-vision-camera';
+
+function xyz(frame: Frame) {
+  'worklet';
+  return __xyz(frame);
+}
 
 const CameraApp = () => {
   const devices = useCameraDevices('wide-angle-camera');
@@ -25,6 +31,7 @@ const CameraApp = () => {
 
   const frameProcessor = useFrameProcessor(frame => {
     'worklet';
+    console.info(xyz(frame));
   }, []);
 
   return device ? (
