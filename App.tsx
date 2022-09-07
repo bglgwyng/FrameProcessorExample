@@ -18,6 +18,11 @@ import {
   useFrameProcessor,
 } from 'react-native-vision-camera';
 
+function xyz(frame: Frame) {
+  'worklet';
+  return __xyz(frame);
+}
+
 const CameraApp = () => {
   const devices = useCameraDevices('wide-angle-camera');
   const device = devices.front;
@@ -25,6 +30,8 @@ const CameraApp = () => {
 
   const frameProcessor = useFrameProcessor(frame => {
     'worklet';
+
+    console.info(xyz(frame));
   }, []);
 
   return device ? (
